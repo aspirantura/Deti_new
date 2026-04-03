@@ -181,12 +181,6 @@ st.markdown("")
 # --- Блок 3: Акушерский анамнез ---
 st.markdown("#### Акушерский анамнез")
 
-# Информация о недоношенности
-st.markdown("""
-<div class="info-box">
-   </div>
-""", unsafe_allow_html=True)
-
 mnogoplod = st.radio(
     "Многоплодная беременность",
     options=["Нет", "Да"],
