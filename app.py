@@ -272,7 +272,7 @@ if st.button("Рассчитать прогноз", type="primary", use_containe
         # Определение категории
         if pk_sum >= 13:
             risk_class = "high"
-            risk_label = "ВЫСОКИЙ РИСК"
+            risk_label = "ОЧЕНЬ ВЫСОКИЙ РИСК"
             risk_text = f"Сумма прогностических коэффициентов = <b>{pk_sum:+.2f}</b> патов<br>Задержка ПМР к 1 году прогнозируется с вероятностью <b>95%</b>"
             css_class = "result-high"
         elif pk_sum >= 9:
@@ -282,7 +282,7 @@ if st.button("Рассчитать прогноз", type="primary", use_containe
             css_class = "result-moderate"
         elif pk_sum <= -13:
             risk_class = "low"
-            risk_label = "НИЗКИЙ РИСК"
+            risk_label = "ОЧЕНЬ НИЗКИЙ РИСК"
             risk_text = f"Сумма прогностических коэффициентов = <b>{pk_sum:+.2f}</b> патов<br>Задержка ПМР к 1 году отрицается с вероятностью <b>95%</b>"
             css_class = "result-low"
         elif pk_sum <= -9:
