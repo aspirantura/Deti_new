@@ -303,43 +303,7 @@ if st.button("Рассчитать прогноз", type="primary", use_containe
         </div>
         """, unsafe_allow_html=True)
         
-        # --- Рекомендации ---
-        st.markdown("#### Рекомендации")
         
-        if risk_class == "high" or risk_class == "moderate":
-            st.markdown("""
-            <div class="recommendations-card recommendations-card-high">
-                <ul>
-                    <li>Раннее начало реабилитационных мероприятий</li>
-                    <li>Консультация невролога 1 раз в месяц</li>
-                    <li>Динамическое наблюдение с оценкой ПМР 1 раз в месяц</li>
-                    <li>Индивидуальная программа развивающего ухода</li>
-                    <li>Контроль сопутствующих заболеваний (анемия, БЛД, ретинопатия и др.)</li>
-                </ul>
-            </div>
-            """, unsafe_allow_html=True)
-        elif risk_class == "low":
-            st.markdown("""
-            <div class="recommendations-card recommendations-card-low">
-                <ul>
-                    <li>Стандартное наблюдение согласно возрастному протоколу</li>
-                    <li>Плановая оценка ПМР в декретированные сроки</li>
-                    <li>Профилактические мероприятия по поддержке нервно-психического развития</li>
-                </ul>
-            </div>
-            """, unsafe_allow_html=True)
-        else:
-            st.markdown("""
-            <div class="recommendations-card recommendations-card-uncertain">
-                <ul>
-                    <li>Усиленное динамическое наблюдение</li>
-                    <li>Повторная оценка факторов риска по мере поступления новых данных</li>
-                    <li>Консультация специалистов при появлении настораживающих симптомов</li>
-                    <li>Рассмотреть раннее начало развивающих занятий</li>
-                </ul>
-            </div>
-            """, unsafe_allow_html=True)
-
 # ============================================================
 # ПОДВАЛ С КОПИРАЙТОМ
 # ============================================================
