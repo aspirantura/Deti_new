@@ -293,7 +293,7 @@ if st.button("Рассчитать прогноз", type="primary", use_containe
         else:
             risk_class = "uncertain"
             risk_label = "ЗОНА НЕОПРЕДЕЛЁННОСТИ"
-            risk_text = f"Сумма прогностических коэффициентов = <b>{pk_sum:+.2f}</b> патов<br>Прогноз неопределённый — рекомендуется динамическое наблюдение"
+            risk_text = f"Сумма прогностических коэффициентов = <b>{pk_sum:+.2f}</b> патов<br>Прогноз неопределённый"
             css_class = "result-uncertain"
         
         st.markdown(f"""
